@@ -1,0 +1,68 @@
+---
+import GlobalLayout from '../layouts/GlobalLayout.astro';
+import CTAGroup from '../components/CTAGroup.astro';
+---
+
+<GlobalLayout title="Thank You | Core Dentistry" description="Thank you for contacting Core Dentistry. A patient coordinator will reach out to you shortly.">
+
+    <!-- ══════════════════════════════════════════════
+         SECTION — THANK YOU HERO
+    ══════════════════════════════════════════════ -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy-dark">
+
+      <!-- Dot grid pattern -->
+      <div
+        class="absolute inset-0 opacity-[0.05]"
+        style="background-image: radial-gradient(circle, #d0d3da 1px, transparent 1px); background-size: 32px 32px;"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Soft rose glow, top center -->
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-2/3 pointer-events-none"
+        style="background: radial-gradient(ellipse at top center, rgba(183, 110, 121, 0.18) 0%, transparent 65%);"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-3xl mx-auto px-6 md:px-10 py-24 md:py-32 w-full text-center">
+
+        <!-- Check icon -->
+        <div class="flex items-center justify-center mb-10">
+          <div class="w-20 h-20 rounded-full bg-rose/15 border border-rose/30 flex items-center justify-center">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polyline points="4,12 9,17 20,7" stroke="#b76e79" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Eyebrow label -->
+        <div class="flex items-center justify-center gap-3 mb-8">
+          <div class="h-px w-10 bg-rose shrink-0"></div>
+          <span class="font-body text-rose text-xs font-semibold tracking-[0.2em] uppercase">
+            Message Received
+          </span>
+          <div class="h-px w-10 bg-rose shrink-0"></div>
+        </div>
+
+        <h1 class="font-heading text-5xl md:text-6xl text-white leading-tight mb-8">
+          Thank You for Trusting<br />
+          <em class="not-italic text-rose">Your Smile</em> With Us.
+        </h1>
+
+        <!-- Divider accent -->
+        <div class="w-16 h-px bg-rose mx-auto mb-8"></div>
+
+        <p class="font-body text-lg text-navy-lighter leading-relaxed mb-10 max-w-xl mx-auto">
+          Your inquiry has been received. One of our experienced patient coordinators
+          will contact you shortly to understand your goals, discuss personalized
+          treatment options, and answer any questions you may have.
+        </p>
+
+        <CTAGroup variant="on-dark" showRequestAppointment={false} />
+
+      </div>
+
+    </section>
+
+</GlobalLayout>

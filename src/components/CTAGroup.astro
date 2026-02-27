@@ -1,0 +1,21 @@
+---
+import CallNowButton from './CallNowButton.astro';
+import RequestAppointmentButton from './RequestAppointmentButton.astro';
+
+interface Props {
+  variant?: 'default' | 'on-dark';
+  showCallNow?: boolean;
+  showRequestAppointment?: boolean;
+}
+
+const {
+  variant = 'default',
+  showCallNow = true,
+  showRequestAppointment = true,
+} = Astro.props;
+---
+
+<div class="inline-flex flex-wrap items-center gap-3">
+  {showCallNow && <CallNowButton variant={variant} />}
+  {showRequestAppointment && <RequestAppointmentButton variant={variant} />}
+</div>

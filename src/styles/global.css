@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('/fonts/BricolageGrotesque-Variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/Inter-Variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@theme {
+  /* ─── Typography ─────────────────────────────────────── */
+  --font-heading: "Bricolage Grotesque", Arial, sans-serif;
+  --font-body: "Inter Variable", Arial, sans-serif;
+
+  /* Type scale — fluid (clamp: mobile → desktop, extracted from Webflow) */
+  --text-7xl: clamp(2.75rem, 2.33vw + 2.283rem, 4rem);    /* h1 */
+  --text-5xl: clamp(2.25rem, 0.83vw + 2.083rem, 2.75rem); /* h2 */
+  --text-4xl: clamp(1.875rem, 0.63vw + 1.75rem, 2.25rem); /* h3 */
+  --text-3xl: clamp(1.5rem, 0.42vw + 1.417rem, 1.75rem);  /* h4 */
+  --text-2xl: 1.5rem;       /* h5 — same at all sizes */
+  --text-xl:  1.375rem;     /* h6 — same at all sizes */
+  --text-lg:  1.25rem;      /* large body */
+  --text-md:  1.125rem;     /* medium body */
+  --text-base: 1rem;        /* regular body */
+
+  /* Line heights */
+  --leading-tight:   1.2;
+  --leading-snug:    1.3;
+  --leading-normal:  1.4;
+  --leading-relaxed: 1.5;
+
+  /* ─── Colors ─────────────────────────────────────────── */
+
+  /* Navy — primary brand (Big Stone) */
+  --color-navy-darkest: #060b15;  /* extracted */
+  --color-navy-darker:  #0b1223;  /* derived */
+  --color-navy-dark:    #121e39;  /* extracted */
+  --color-navy:         #172648;  /* extracted */
+  --color-navy-light:   #5c677e;  /* extracted */
+  --color-navy-lighter: #d0d3da;  /* extracted */
+  --color-navy-lightest:#f1f2f4;  /* derived */
+
+  /* Rose — primary accent (Turkish Rose) */
+  --color-rose-darkest: #492c30;  /* extracted */
+  --color-rose-darker:  #693f45;  /* derived */
+  --color-rose-dark:    #925860;  /* extracted */
+  --color-rose:         #b76e79;  /* extracted */
+  --color-rose-light:   #f0e2e4;  /* extracted */
+  --color-rose-lighter: #f6eeef;  /* derived */
+  --color-rose-lightest:#fbf9f9;  /* derived */
+
+  /* Blush — secondary accent (Oriental Pink) */
+  --color-blush-darkest: #3e2d28; /* derived */
+  --color-blush-darker:  #6c5047; /* derived */
+  --color-blush-dark:    #a07c70; /* extracted */
+  --color-blush:         #cbaea4; /* derived */
+  --color-blush-light:   #f4ebe8; /* extracted */
+  --color-blush-lighter: #f9f5f3; /* extracted */
+  --color-blush-lightest:#fdfcfc; /* derived */
+
+  /* Cream — warm backgrounds (Pot Pourri) */
+  --color-cream-darkest: #484543; /* extracted */
+  --color-cream-darker:  #78716d; /* derived */
+  --color-cream-dark:    #b3a098; /* derived */
+  --color-cream:         #f3e6e1; /* extracted */
+  --color-cream-light:   #f6edea; /* extracted */
+  --color-cream-lighter: #fcfaf9; /* extracted */
+  --color-cream-lightest:#fefcfb; /* derived */
+
+  /* Neutral — grays */
+  --color-neutral-darkest: #121212; /* derived */
+  --color-neutral-darker:  #222222; /* extracted */
+  --color-neutral-dark:    #444444; /* extracted */
+  --color-neutral:         #666666; /* extracted */
+  --color-neutral-light:   #aaaaaa; /* extracted */
+  --color-neutral-lighter: #cccccc; /* extracted */
+  --color-neutral-lightest:#eeeeee; /* extracted */
+
+  /* Base */
+  --color-text:  #0a0807;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}

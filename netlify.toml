@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cross-Origin-Opener-Policy = "same-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'sha256-nB/lp6Dt9SplqU/aEbtBMBlC2R5RQEZ3jgAA79ir79Q=' 'strict-dynamic' 'unsafe-inline' https: http:; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; form-action https://usebasin.com; frame-src https://www.google.com; frame-ancestors 'none'; connect-src 'self' https://usebasin.com https://www.google.com; base-uri 'self'; require-trusted-types-for 'script'; trusted-types default goog#html"

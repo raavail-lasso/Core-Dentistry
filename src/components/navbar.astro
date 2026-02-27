@@ -1,0 +1,20 @@
+---
+import CTAGroup from './CTAGroup.astro';
+
+interface Props {
+  showCallNow?: boolean;
+  showRequestAppointment?: boolean;
+}
+
+const { showCallNow, showRequestAppointment } = Astro.props;
+---
+
+<header class="sticky top-0 z-50 bg-white border-b border-navy-lighter">
+  <nav class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="/" class="shrink-0 no-underline" aria-label="Core Dentistry – home">
+      <img src="/images/Logo-new16bit.webp" alt="Core Dentistry" width="440" height="60" class="h-10 w-auto" />
+    </a>
+
+    <CTAGroup showCallNow={showCallNow} showRequestAppointment={showRequestAppointment} />
+  </nav>
+</header>

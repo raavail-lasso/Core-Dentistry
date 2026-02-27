@@ -1,0 +1,76 @@
+---
+---
+
+<form
+  method="POST"
+  action="https://usebasin.com/f/02b56b01e7c0"
+  data-basin-form="true"
+  data-basin-success-action="redirect"
+  data-basin-spam-protection="recaptcha"
+  class="flex flex-col gap-5"
+>
+
+  <div class="flex flex-col gap-1.5">
+    <label for="name" class="font-body text-base font-medium text-navy">
+      Name
+    </label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      required
+      autocomplete="name"
+      placeholder="Jane Smith"
+      class="rounded-lg border border-navy-lighter bg-white px-4 py-3 font-body text-base text-navy placeholder:text-neutral-light transition-colors duration-200 focus:border-rose focus:outline-none focus:ring-2 focus:ring-rose/20"
+    />
+  </div>
+
+  <div class="flex flex-col gap-1.5">
+    <label for="phone" class="font-body text-base font-medium text-navy">
+      Phone
+    </label>
+    <input
+      id="phone"
+      type="tel"
+      name="phone"
+      autocomplete="tel"
+      placeholder="(555) 555-5555"
+      class="rounded-lg border border-navy-lighter bg-white px-4 py-3 font-body text-base text-navy placeholder:text-neutral-light transition-colors duration-200 focus:border-rose focus:outline-none focus:ring-2 focus:ring-rose/20"
+    />
+  </div>
+
+  <div class="flex flex-col gap-1.5">
+    <label for="email" class="font-body text-base font-medium text-navy">
+      Email
+    </label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      required
+      autocomplete="email"
+      placeholder="jane@example.com"
+      class="rounded-lg border border-navy-lighter bg-white px-4 py-3 font-body text-base text-navy placeholder:text-neutral-light transition-colors duration-200 focus:border-rose focus:outline-none focus:ring-2 focus:ring-rose/20"
+    />
+  </div>
+
+  <div class="flex flex-col gap-1.5">
+    <label for="message" class="font-body text-base font-medium text-navy">
+      Message
+    </label>
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      placeholder="How can we help you?"
+      class="resize-none rounded-lg border border-navy-lighter bg-white px-4 py-3 font-body text-base text-navy placeholder:text-neutral-light transition-colors duration-200 focus:border-rose focus:outline-none focus:ring-2 focus:ring-rose/20"
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="inline-flex items-center justify-center rounded-full bg-navy px-8 py-3.5 font-body text-base font-semibold text-white transition-colors duration-200 hover:bg-navy-dark"
+  >
+    Send Message
+  </button>
+</form>

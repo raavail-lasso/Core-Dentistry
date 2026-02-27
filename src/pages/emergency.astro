@@ -1,0 +1,518 @@
+---
+import GlobalLayout from '../layouts/GlobalLayout.astro';
+import CTAGroup from '../components/CTAGroup.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<GlobalLayout title="Dental Emergency Fort Mill | Same-Day Appointments | Core Dentistry" description="Dental emergency in Fort Mill or Tega Cay? Core Dentistry offers same-day appointments for tooth pain, broken teeth, and urgent care. Call now for fast relief.">
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 1 — HERO (The Problem)
+    ══════════════════════════════════════════════ -->
+    <section class="relative min-h-screen flex items-center overflow-hidden bg-navy-dark">
+
+      <!-- Dot grid pattern -->
+      <div
+        class="absolute inset-0 opacity-[0.05]"
+        style="background-image: radial-gradient(circle, #d0d3da 1px, transparent 1px); background-size: 32px 32px;"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Urgent red-rose glow, top right -->
+      <div
+        class="absolute top-0 right-0 w-2/3 h-2/3 pointer-events-none"
+        style="background: radial-gradient(ellipse at top right, rgba(183, 110, 121, 0.22) 0%, transparent 65%);"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-32 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 items-center">
+
+          <!-- Left: copy + CTAs -->
+          <div>
+            <!-- Eyebrow label -->
+            <div class="flex items-center gap-3 mb-8">
+              <div class="h-px w-10 bg-rose shrink-0"></div>
+              <span class="font-body text-rose text-xs font-semibold tracking-[0.2em] uppercase">
+                Dental Emergency — Fort Mill
+              </span>
+            </div>
+
+            <h1 class="font-heading text-6xl md:text-7xl text-white leading-tight mb-8">
+              Dealing with a<br />
+              Dental Emergency?<br />
+              <em class="not-italic text-rose">Get Relief Today</em><br />
+              in Fort Mill.
+            </h1>
+
+            <!-- Divider accent -->
+            <div class="w-16 h-px bg-rose mb-8"></div>
+
+            <p class="font-body text-lg text-navy-lighter leading-relaxed mb-10 max-w-xl">
+              Tooth pain does not follow a schedule. Whether you have a broken tooth, a lost
+              filling, or a throbbing ache that will not go away, you need a dentist who can
+              see you right now. At Core Dentistry, we prioritize dental emergencies so you
+              can stop the pain and get back to your life.
+            </p>
+
+            <CTAGroup variant="on-dark" />
+          </div>
+
+          <!-- Right: placeholder image -->
+          <div class="relative hidden lg:block">
+            <div class="w-full aspect-4/5 rounded-3xl overflow-hidden">
+              <img src="/images/Emergency.webp" alt="Dental emergency care Fort Mill" class="w-full h-full object-cover" />
+            </div>
+            <!-- Floating urgency badge -->
+            <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl px-6 py-4 shadow-lg border border-cream-light">
+              <p class="font-heading text-2xl text-navy leading-none mb-0.5">Same Day</p>
+              <p class="font-body text-sm text-neutral">Emergency Appointments</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 2 — AGITATION (The Risk of Waiting)
+    ══════════════════════════════════════════════ -->
+    <section class="bg-cream-lighter py-24 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+
+        <!-- Section label + heading + body -->
+        <div class="max-w-2xl mb-14">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="h-px w-8 bg-rose shrink-0"></div>
+            <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">Don't Wait</span>
+          </div>
+          <h2 class="font-heading text-5xl text-navy leading-snug mb-5">
+            Dental Pain is a Warning Sign<br />that Cannot Be Ignored.
+          </h2>
+          <p class="font-body text-md text-neutral leading-relaxed">
+            A minor ache can quickly escalate into a severe infection or a dental abscess.
+            If you wait too long, a simple fix could turn into an expensive extraction or a
+            complex root canal. Do not risk your health or your smile by waiting for a busy
+            office to find a gap in their schedule. The sooner we see you, the more likely
+            we are to save your natural tooth.
+          </p>
+        </div>
+
+        <!-- Three consequence cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
+
+          <!-- Card 1: Infection Risk -->
+          <div class="bg-white rounded-2xl p-8 border border-cream-light shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col gap-5">
+            <div class="w-11 h-11 rounded-xl bg-rose-light flex items-center justify-center shrink-0">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#b76e79" stroke-width="1.75" stroke-linejoin="round"/>
+                <line x1="12" y1="9" x2="12" y2="13" stroke="#b76e79" stroke-width="1.75" stroke-linecap="round"/>
+                <circle cx="12" cy="17" r="0.75" fill="#b76e79"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-heading text-2xl text-navy mb-2 leading-snug">Infections Spread Fast</h3>
+              <p class="font-body text-base text-neutral leading-relaxed">
+                An untreated dental infection can spread to your jaw, neck, and beyond. What
+                starts as a toothache can become a serious, life-threatening emergency.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-cream-light">
+              <p class="font-body text-sm text-rose-dark font-semibold">Every hour matters</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Tooth Loss Risk -->
+          <div class="bg-white rounded-2xl p-8 border border-cream-light shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col gap-5">
+            <div class="w-11 h-11 rounded-xl bg-rose-light flex items-center justify-center shrink-0">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 22C12 22 4 16 4 9a8 8 0 0116 0c0 7-8 13-8 13z" stroke="#b76e79" stroke-width="1.75" stroke-linejoin="round"/>
+                <circle cx="12" cy="9" r="2.5" stroke="#b76e79" stroke-width="1.75"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-heading text-2xl text-navy mb-2 leading-snug">Permanent Tooth Loss</h3>
+              <p class="font-body text-base text-neutral leading-relaxed">
+                Delay long enough, and we may not be able to save the tooth at all. Early
+                intervention is the difference between a simple fix and a permanent gap.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-cream-light">
+              <p class="font-body text-sm text-rose-dark font-semibold">Act before it's too late</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Cost Escalation -->
+          <div class="bg-white rounded-2xl p-8 border border-cream-light shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col gap-5">
+            <div class="w-11 h-11 rounded-xl bg-rose-light flex items-center justify-center shrink-0">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <polyline points="3,17 8,11 12,14 17,7" stroke="#b76e79" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="17,7 21,7 21,11" stroke="#b76e79" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="3" y1="20" x2="21" y2="20" stroke="#b76e79" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-heading text-2xl text-navy mb-2 leading-snug">Costs Keep Climbing</h3>
+              <p class="font-body text-base text-neutral leading-relaxed">
+                A simple filling today can become an extraction tomorrow. The longer you
+                wait, the more complex and expensive the treatment becomes.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-cream-light">
+              <p class="font-body text-sm text-rose-dark font-semibold">Early care saves money</p>
+            </div>
+          </div>
+
+        </div>
+
+        <CTAGroup />
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 3 — SOLUTION (The Core Difference)
+    ══════════════════════════════════════════════ -->
+    <section class="bg-white py-24 md:py-32 relative overflow-hidden">
+
+      <!-- Decorative soft blush shape, right side -->
+      <div
+        class="absolute -right-48 top-1/2 -translate-y-1/2 w-[560px] h-[560px] rounded-full pointer-events-none"
+        style="background: radial-gradient(circle, rgba(246, 238, 239, 0.85) 0%, transparent 70%);"
+        aria-hidden="true"
+      ></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-center">
+
+          <!-- Left: copy + CTAs -->
+          <div>
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-px w-8 bg-rose shrink-0"></div>
+              <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">Same-Day Relief</span>
+            </div>
+            <h2 class="font-heading text-5xl text-navy leading-snug mb-6">
+              Same Day Emergency<br />Appointments for New<br />and Existing Patients.
+            </h2>
+            <p class="font-body text-md text-neutral leading-relaxed mb-4">
+              Dr. Elizabeth Alexander and Dr. Erika Burley have equipped Core Dentistry with
+              the latest technology to diagnose the source of your pain instantly. Because we
+              are a growing practice, we often have immediate openings to treat urgent cases
+              from Fort Mill, Tega Cay, and surrounding areas.
+            </p>
+            <p class="font-heading text-2xl text-navy mb-6 leading-snug">
+              "We provide gentle, professional<br />care to ensure you leave our office<br />feeling better than when you walked in."
+            </p>
+            <CTAGroup />
+          </div>
+
+          <!-- Right: feature highlight tiles -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+            <div class="flex items-start gap-4 p-6 bg-cream-lighter rounded-2xl border border-cream-light">
+              <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-navy mb-1 leading-snug">Same-Day Openings</h3>
+                <p class="font-body text-sm text-neutral leading-relaxed">We reserve time each day for urgent cases so you are never left waiting.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-6 bg-cream-lighter rounded-2xl border border-cream-light">
+              <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="11" cy="11" r="7"/>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-navy mb-1 leading-snug">Instant Diagnosis</h3>
+                <p class="font-body text-sm text-neutral leading-relaxed">Advanced imaging technology pinpoints the source of your pain on the spot.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-6 bg-cream-lighter rounded-2xl border border-cream-light">
+              <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-navy mb-1 leading-snug">Tooth-Saving Focus</h3>
+                <p class="font-body text-sm text-neutral leading-relaxed">We always pursue the most conservative treatment to preserve your natural tooth.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-6 bg-cream-lighter rounded-2xl border border-cream-light">
+              <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 010 7.75"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-navy mb-1 leading-snug">New Patients Welcome</h3>
+                <p class="font-body text-sm text-neutral leading-relaxed">You don't need to be an existing patient. We'll see you today, no history required.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 4 — PROOF (Emergency Testimonial)
+    ══════════════════════════════════════════════ -->
+    <section class="relative bg-navy py-24 md:py-32 overflow-hidden">
+
+      <!-- Subtle dot grid -->
+      <div
+        class="absolute inset-0 opacity-[0.04]"
+        style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 36px 36px;"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Decorative oversized opening quotation mark -->
+      <div
+        class="absolute -top-6 left-4 md:left-10 font-heading leading-none pointer-events-none select-none text-rose opacity-[0.08]"
+        style="font-size: clamp(160px, 22vw, 300px);"
+        aria-hidden="true"
+      >"</div>
+
+      <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-10 text-center">
+
+        <div class="flex items-center gap-3 justify-center mb-8">
+          <div class="h-px w-8 bg-rose shrink-0"></div>
+          <span class="font-body text-rose text-xs font-semibold tracking-[0.2em] uppercase">Why Our Neighbors Trust Us</span>
+          <div class="h-px w-8 bg-rose shrink-0"></div>
+        </div>
+
+        <h2 class="font-heading text-5xl text-white leading-snug mb-10">
+          Why Our Neighbors Trust Us<br />in an Emergency.
+        </h2>
+
+        <!-- Five stars -->
+        <div class="flex items-center justify-center gap-1.5 mb-10" role="img" aria-label="Five-star patient review">
+          {[1, 2, 3, 4, 5].map((_) => (
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="#f5c842" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          ))}
+        </div>
+
+        <blockquote class="font-heading text-3xl md:text-4xl text-white leading-snug mb-10 italic">
+          "Dr. Elizabeth is awesome. She is very caring and takes her time to take care of
+          our dental needs. I brought my parents here and my daughter. We are highly
+          satisfied. It's a new practice, so they do have availability which really helped
+          us during a dental emergency."
+        </blockquote>
+
+        <div class="flex items-center justify-center gap-3">
+          <div class="h-px w-8 bg-rose-dark shrink-0"></div>
+          <cite class="font-body text-rose not-italic text-lg font-semibold">T C</cite>
+          <div class="h-px w-8 bg-rose-dark shrink-0"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 5 — FINANCIALS (Transparent Care)
+    ══════════════════════════════════════════════ -->
+    <section class="bg-cream-lighter py-24 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-center">
+
+          <!-- Left: copy -->
+          <div>
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-px w-8 bg-rose shrink-0"></div>
+              <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">Insurance &amp; Payment</span>
+            </div>
+            <h2 class="font-heading text-5xl text-navy leading-snug mb-6">
+              Emergency Care Should<br />Be Accessible,<br />Not Stressful.
+            </h2>
+            <p class="font-body text-md text-neutral leading-relaxed mb-6">
+              We believe that no one should have to live with dental pain because of financial
+              concerns. We accept a wide range of major insurance plans and will verify your
+              benefits on the spot.
+            </p>
+            <p class="font-body text-md text-neutral leading-relaxed mb-10">
+              If you do not have insurance, we offer flexible financing options and accept all
+              major credit cards. Our team will work with you to find a solution that fits your
+              budget while addressing your pain.
+            </p>
+            <CTAGroup />
+          </div>
+
+          <!-- Right: insurance providers + no-insurance callout -->
+          <div class="flex flex-col gap-6">
+
+            <!-- In-Network card -->
+            <div class="bg-white rounded-2xl p-8 border border-cream-light shadow-sm">
+              <h3 class="font-heading text-xl text-navy mb-5 leading-snug">Our In-Network Providers Include</h3>
+              <ul class="grid grid-cols-2 gap-3">
+                {['Cigna', 'Delta Dental', 'MetLife', 'Aetna', 'Humana', 'UnitedHealthcare'].map((name) => (
+                  <li class="flex items-center gap-2.5 font-body text-base text-navy">
+                    <span class="w-5 h-5 rounded-full bg-rose flex items-center justify-center shrink-0" aria-hidden="true">
+                      <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="1,4.5 3.5,7 9,1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    {name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <!-- No insurance callout -->
+            <div class="bg-navy rounded-2xl p-8 flex items-start gap-5">
+              <div class="w-11 h-11 rounded-xl bg-rose/20 flex items-center justify-center shrink-0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b76e79" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="1" y="4" width="22" height="16" rx="2"/>
+                  <line x1="1" y1="10" x2="23" y2="10"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-white mb-2 leading-snug">No Insurance? No Problem.</h3>
+                <p class="font-body text-sm text-navy-lighter leading-relaxed">
+                  We offer flexible financing options so your budget never stands between you
+                  and the relief you need. Ask our team about payment plans today.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 6 — FAQ
+    ══════════════════════════════════════════════ -->
+    <section class="bg-white py-24 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+          <!-- Left: heading (sticky on desktop) -->
+          <div class="lg:sticky lg:top-28">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-px w-8 bg-rose shrink-0"></div>
+              <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">Common Questions</span>
+            </div>
+            <h2 class="font-heading text-5xl text-navy leading-snug mb-6">
+              Frequently Asked<br />Questions.
+            </h2>
+            <p class="font-body text-md text-neutral leading-relaxed mb-10">
+              Not sure if your situation counts as an emergency? Here are the questions
+              we hear most from patients in pain.
+            </p>
+            <CTAGroup />
+          </div>
+
+          <!-- Right: FAQ list -->
+          <div class="flex flex-col gap-0 divide-y divide-cream-light">
+
+            {[
+              {
+                q: 'What counts as a dental emergency?',
+                a: 'If you are experiencing severe pain, swelling, a knocked-out tooth, or a cracked crown, it is an emergency. When in doubt, call us. We would rather hear from you than have you suffer at home.',
+              },
+              {
+                q: 'How soon can I be seen?',
+                a: 'We strive to offer same-day or next-day appointments for patients in pain. Because we are a growing practice, we often have openings that other offices do not.',
+              },
+              {
+                q: 'Will I need a root canal?',
+                a: 'Our goal is always to save the tooth with the most conservative treatment possible. We will thoroughly explain all your options before we begin — no surprises.',
+              },
+              {
+                q: 'I am not a current patient. Can you still see me?',
+                a: 'Absolutely. We welcome new patients, including emergency walk-ins. Call our office and we will do everything we can to get you in today.',
+              },
+              {
+                q: 'What if I am nervous about dental visits?',
+                a: 'We understand. We offer sedation options and our team is trained to provide gentle, judgment-free care. Your comfort is our first priority.',
+              },
+            ].map((item) => (
+              <div class="py-7">
+                <h3 class="font-heading text-xl text-navy mb-3 leading-snug">{item.q}</h3>
+                <p class="font-body text-base text-neutral leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 7 — CONTACT FORM
+    ══════════════════════════════════════════════ -->
+    <section id="request-appointment" class="bg-cream-lighter py-24 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+          <!-- Left: copy + trust signals (sticky on desktop) -->
+          <div class="lg:sticky lg:top-28">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-px w-8 bg-rose shrink-0"></div>
+              <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">Contact Us Now</span>
+            </div>
+            <h2 class="font-heading text-5xl text-navy leading-snug mb-6">
+              Need Immediate Help?<br />Contact Our Team Now.
+            </h2>
+            <p class="font-body text-md text-neutral leading-relaxed mb-10">
+              Fill out the form below for a quick response, or for the fastest service, call
+              our Fort Mill office directly. We are ready to help you find relief.
+            </p>
+
+            <!-- Trust signal checklist -->
+            <ul class="flex flex-col gap-4" role="list">
+              {[
+                'Same-day emergency appointments available',
+                'We verify your insurance on the spot',
+                'New and existing patients welcome',
+                'Serving Fort Mill, Tega Cay & surrounding areas',
+              ].map((item) => (
+                <li class="flex items-center gap-3 font-body text-base text-navy">
+                  <span class="w-5 h-5 rounded-full bg-rose flex items-center justify-center shrink-0" aria-hidden="true">
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <polyline points="1,4.5 3.5,7 9,1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <!-- Right: form card -->
+          <div class="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-cream-light">
+            <h3 class="font-heading text-2xl text-navy mb-6 leading-snug">Submit Your Request</h3>
+            <ContactForm />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+</GlobalLayout>

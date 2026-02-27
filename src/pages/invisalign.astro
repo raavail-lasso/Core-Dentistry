@@ -1,0 +1,520 @@
+---
+import GlobalLayout from '../layouts/GlobalLayout.astro';
+import CTAGroup from '../components/CTAGroup.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<GlobalLayout title="Invisalign Fort Mill | Clear Aligners | Core Dentistry" description="Straighten your teeth discreetly with Invisalign at Core Dentistry in Fort Mill, SC. Clear aligners with no metal wires. Start your smile transformation today.">
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 1 — HERO (The Problem)
+    ══════════════════════════════════════════════ -->
+    <section class="relative min-h-screen flex items-center overflow-hidden bg-navy-dark">
+
+      <!-- Dot grid pattern -->
+      <div
+        class="absolute inset-0 opacity-[0.05]"
+        style="background-image: radial-gradient(circle, #d0d3da 1px, transparent 1px); background-size: 32px 32px;"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Soft blue-rose glow, top right -->
+      <div
+        class="absolute top-0 right-0 w-2/3 h-2/3 pointer-events-none"
+        style="background: radial-gradient(ellipse at top right, rgba(183, 110, 121, 0.18) 0%, transparent 65%);"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-32 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 items-center">
+
+          <!-- Left: copy + CTAs -->
+          <div>
+            <!-- Eyebrow label -->
+            <div class="flex items-center gap-3 mb-8">
+              <div class="h-px w-10 bg-rose shrink-0"></div>
+              <span class="font-body text-rose text-xs font-semibold tracking-[0.2em] uppercase">
+                Invisalign — Fort Mill
+              </span>
+            </div>
+
+            <h1 class="font-heading text-6xl md:text-7xl text-white leading-tight mb-8">
+              Dreaming of a<br />
+              Straighter Smile<br />
+              <em class="not-italic text-rose">Without the</em><br />
+              Metal Braces?
+            </h1>
+
+            <!-- Divider accent -->
+            <div class="w-16 h-px bg-rose mb-8"></div>
+
+            <p class="font-body text-lg text-navy-lighter leading-relaxed mb-10 max-w-xl">
+              Many adults and teens want to fix crowding, gaps, or misaligned teeth but avoid
+              it because they do not want to deal with the look and discomfort of traditional
+              orthodontics. You should not have to choose between your professional appearance
+              and the smile you have always wanted. At Core Dentistry, we provide a clear way
+              forward.
+            </p>
+
+            <CTAGroup variant="on-dark" />
+          </div>
+
+          <!-- Right: placeholder image -->
+          <div class="relative hidden lg:block">
+            <div class="w-full aspect-4/5 rounded-3xl overflow-hidden">
+              <img src="/images/Invisalign.webp" alt="Invisalign clear aligners Fort Mill" class="w-full h-full object-cover" />
+            </div>
+            <!-- Floating badge -->
+            <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl px-6 py-4 shadow-lg border border-cream-light">
+              <p class="font-heading text-2xl text-navy leading-none mb-0.5">Nearly Invisible</p>
+              <p class="font-body text-sm text-neutral">Custom Clear Aligners</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 2 — AGITATION (The Hidden Cost of Misalignment)
+    ══════════════════════════════════════════════ -->
+    <section class="bg-cream-lighter py-24 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+
+        <!-- Section label + heading + body -->
+        <div class="max-w-2xl mb-14">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="h-px w-8 bg-rose shrink-0"></div>
+            <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">More Than Cosmetic</span>
+          </div>
+          <h2 class="font-heading text-5xl text-navy leading-snug mb-5">
+            Crooked Teeth are More Than<br />Just a Cosmetic Concern.
+          </h2>
+          <p class="font-body text-md text-neutral leading-relaxed">
+            Misaligned teeth are significantly harder to clean, which increases your risk of
+            gum disease and hidden tooth decay. Over time, an uneven bite can lead to jaw
+            pain, persistent headaches, and premature wear on your tooth enamel. The longer
+            you wait to correct your alignment, the more likely you are to face restorative
+            dental work in the future.
+          </p>
+        </div>
+
+        <!-- Three consequence cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
+
+          <!-- Card 1: Gum Disease Risk -->
+          <div class="bg-white rounded-2xl p-8 border border-cream-light shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col gap-5">
+            <div class="w-11 h-11 rounded-xl bg-rose-light flex items-center justify-center shrink-0">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#b76e79" stroke-width="1.75" stroke-linejoin="round"/>
+                <line x1="12" y1="9" x2="12" y2="13" stroke="#b76e79" stroke-width="1.75" stroke-linecap="round"/>
+                <circle cx="12" cy="17" r="0.75" fill="#b76e79"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-heading text-2xl text-navy mb-2 leading-snug">Gum Disease &amp; Decay</h3>
+              <p class="font-body text-base text-neutral leading-relaxed">
+                Crowded and overlapping teeth create hard-to-reach pockets where bacteria
+                thrive, dramatically increasing your risk of gum disease and hidden cavities.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-cream-light">
+              <p class="font-body text-sm text-rose-dark font-semibold">Prevention starts with alignment</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Jaw Pain & Headaches -->
+          <div class="bg-white rounded-2xl p-8 border border-cream-light shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col gap-5">
+            <div class="w-11 h-11 rounded-xl bg-rose-light flex items-center justify-center shrink-0">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 22C12 22 4 16 4 9a8 8 0 0116 0c0 7-8 13-8 13z" stroke="#b76e79" stroke-width="1.75" stroke-linejoin="round"/>
+                <circle cx="12" cy="9" r="2.5" stroke="#b76e79" stroke-width="1.75"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-heading text-2xl text-navy mb-2 leading-snug">Jaw Pain &amp; Headaches</h3>
+              <p class="font-body text-base text-neutral leading-relaxed">
+                An uneven bite puts chronic stress on your jaw joints and muscles, often
+                causing persistent headaches, facial soreness, and TMJ discomfort.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-cream-light">
+              <p class="font-body text-sm text-rose-dark font-semibold">Relief is possible</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Premature Enamel Wear -->
+          <div class="bg-white rounded-2xl p-8 border border-cream-light shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col gap-5">
+            <div class="w-11 h-11 rounded-xl bg-rose-light flex items-center justify-center shrink-0">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <polyline points="3,17 8,11 12,14 17,7" stroke="#b76e79" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="17,7 21,7 21,11" stroke="#b76e79" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="3" y1="20" x2="21" y2="20" stroke="#b76e79" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-heading text-2xl text-navy mb-2 leading-snug">Premature Enamel Wear</h3>
+              <p class="font-body text-base text-neutral leading-relaxed">
+                Misaligned bites cause uneven pressure that wears down your enamel years
+                ahead of schedule, making future restorative treatment far more likely.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-cream-light">
+              <p class="font-body text-sm text-rose-dark font-semibold">Act now to protect your teeth</p>
+            </div>
+          </div>
+
+        </div>
+
+        <CTAGroup />
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 3 — SOLUTION (The Invisalign Difference)
+    ══════════════════════════════════════════════ -->
+    <section class="bg-white py-24 md:py-32 relative overflow-hidden">
+
+      <!-- Decorative soft blush shape, right side -->
+      <div
+        class="absolute -right-48 top-1/2 -translate-y-1/2 w-[560px] h-[560px] rounded-full pointer-events-none"
+        style="background: radial-gradient(circle, rgba(246, 238, 239, 0.85) 0%, transparent 70%);"
+        aria-hidden="true"
+      ></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-center">
+
+          <!-- Left: copy + CTAs -->
+          <div>
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-px w-8 bg-rose shrink-0"></div>
+              <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">The Invisalign Difference</span>
+            </div>
+            <h2 class="font-heading text-5xl text-navy leading-snug mb-6">
+              Clear, Comfortable,<br />and Convenient<br />Aligners in Fort Mill.
+            </h2>
+            <p class="font-body text-md text-neutral leading-relaxed mb-4">
+              At Core Dentistry, we use Invisalign to give you a perfectly aligned smile
+              without the lifestyle interruptions. These custom-made trays are nearly invisible
+              and can be removed when you eat, brush, or floss.
+            </p>
+            <p class="font-heading text-2xl text-navy mb-6 leading-snug">
+              "Dr. Alexander and Dr. Burley use advanced<br />3D scanning technology to map out your<br />entire treatment before you even start."
+            </p>
+            <CTAGroup />
+          </div>
+
+          <!-- Right: feature highlight tiles -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+            <div class="flex items-start gap-4 p-6 bg-cream-lighter rounded-2xl border border-cream-light">
+              <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M8 12s1 2 4 2 4-2 4-2"/>
+                  <line x1="9" y1="9" x2="9.01" y2="9"/>
+                  <line x1="15" y1="9" x2="15.01" y2="9"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-navy mb-1 leading-snug">Nearly Invisible</h3>
+                <p class="font-body text-sm text-neutral leading-relaxed">Clear aligners are virtually undetectable, so your treatment stays your business.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-6 bg-cream-lighter rounded-2xl border border-cream-light">
+              <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <polyline points="9 11 12 14 22 4"/>
+                  <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-navy mb-1 leading-snug">Fully Removable</h3>
+                <p class="font-body text-sm text-neutral leading-relaxed">Take them out to eat, brush, and floss. No wires, no restrictions on your diet.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-6 bg-cream-lighter rounded-2xl border border-cream-light">
+              <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-navy mb-1 leading-snug">3D Scan Technology</h3>
+                <p class="font-body text-sm text-neutral leading-relaxed">We map your entire treatment digitally before you start, ensuring a perfect fit and predictable results.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-6 bg-cream-lighter rounded-2xl border border-cream-light">
+              <div class="w-10 h-10 rounded-xl bg-navy flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 010 7.75"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-navy mb-1 leading-snug">Adults &amp; Teens Welcome</h3>
+                <p class="font-body text-sm text-neutral leading-relaxed">Invisalign works for a wide range of cases. Dr. Alexander and Dr. Burley will confirm your eligibility at your consultation.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 4 — PROOF (Technology Testimonial)
+    ══════════════════════════════════════════════ -->
+    <section class="relative bg-navy py-24 md:py-32 overflow-hidden">
+
+      <!-- Subtle dot grid -->
+      <div
+        class="absolute inset-0 opacity-[0.04]"
+        style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 36px 36px;"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Decorative oversized opening quotation mark -->
+      <div
+        class="absolute -top-6 left-4 md:left-10 font-heading leading-none pointer-events-none select-none text-rose opacity-[0.08]"
+        style="font-size: clamp(160px, 22vw, 300px);"
+        aria-hidden="true"
+      >"</div>
+
+      <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-10 text-center">
+
+        <div class="flex items-center gap-3 justify-center mb-8">
+          <div class="h-px w-8 bg-rose shrink-0"></div>
+          <span class="font-body text-rose text-xs font-semibold tracking-[0.2em] uppercase">Why Our Patients Love the Core Experience</span>
+          <div class="h-px w-8 bg-rose shrink-0"></div>
+        </div>
+
+        <h2 class="font-heading text-5xl text-white leading-snug mb-10">
+          Why Our Patients Love<br />the Core Experience.
+        </h2>
+
+        <!-- Five stars -->
+        <div class="flex items-center justify-center gap-1.5 mb-10" role="img" aria-label="Five-star patient review">
+          {[1, 2, 3, 4, 5].map((_) => (
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="#f5c842" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          ))}
+        </div>
+
+        <blockquote class="font-heading text-3xl md:text-4xl text-white leading-snug mb-10 italic">
+          "Love Core Dentistry! My family has been with Core since they first opened. The
+          staff is friendly and professional. They are very up to date in technology too.
+          Nice clean high tech office. I cannot say enough good things. I highly recommend
+          them!"
+        </blockquote>
+
+        <div class="flex items-center justify-center gap-3">
+          <div class="h-px w-8 bg-rose-dark shrink-0"></div>
+          <cite class="font-body text-rose not-italic text-lg font-semibold">Tamera Stanley</cite>
+          <div class="h-px w-8 bg-rose-dark shrink-0"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 5 — FINANCIALS (Modern Accessibility)
+    ══════════════════════════════════════════════ -->
+    <section class="bg-cream-lighter py-24 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-center">
+
+          <!-- Left: copy -->
+          <div>
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-px w-8 bg-rose shrink-0"></div>
+              <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">Insurance &amp; Payment</span>
+            </div>
+            <h2 class="font-heading text-5xl text-navy leading-snug mb-6">
+              Your New Smile is More<br />Affordable Than<br />You Think.
+            </h2>
+            <p class="font-body text-md text-neutral leading-relaxed mb-6">
+              We believe that everyone deserves a smile they are proud to show off. We accept
+              many major insurance plans that offer orthodontic coverage. Our team will verify
+              your benefits and help you understand your out-of-pocket costs before treatment
+              begins.
+            </p>
+            <p class="font-body text-md text-neutral leading-relaxed mb-10">
+              We also offer flexible third-party financing and monthly payment plans to ensure
+              Invisalign fits comfortably into your family budget.
+            </p>
+            <CTAGroup />
+          </div>
+
+          <!-- Right: insurance providers + financing callout -->
+          <div class="flex flex-col gap-6">
+
+            <!-- In-Network card -->
+            <div class="bg-white rounded-2xl p-8 border border-cream-light shadow-sm">
+              <h3 class="font-heading text-xl text-navy mb-5 leading-snug">We Accept Orthodontic Coverage From</h3>
+              <ul class="grid grid-cols-2 gap-3">
+                {['Aetna', 'Cigna', 'Delta Dental', 'MetLife', 'UnitedHealthcare', 'And More'].map((name) => (
+                  <li class="flex items-center gap-2.5 font-body text-base text-navy">
+                    <span class="w-5 h-5 rounded-full bg-rose flex items-center justify-center shrink-0" aria-hidden="true">
+                      <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="1,4.5 3.5,7 9,1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    {name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <!-- Financing callout -->
+            <div class="bg-navy rounded-2xl p-8 flex items-start gap-5">
+              <div class="w-11 h-11 rounded-xl bg-rose/20 flex items-center justify-center shrink-0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b76e79" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="1" y="4" width="22" height="16" rx="2"/>
+                  <line x1="1" y1="10" x2="23" y2="10"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-heading text-xl text-white mb-2 leading-snug">Flexible Monthly Payment Plans</h3>
+                <p class="font-body text-sm text-navy-lighter leading-relaxed">
+                  We offer flexible third-party financing so your budget never stands between
+                  you and the smile you deserve. Ask our team about your options today.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 6 — FAQ
+    ══════════════════════════════════════════════ -->
+    <section class="bg-white py-24 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+          <!-- Left: heading (sticky on desktop) -->
+          <div class="lg:sticky lg:top-28">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-px w-8 bg-rose shrink-0"></div>
+              <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">Common Questions</span>
+            </div>
+            <h2 class="font-heading text-5xl text-navy leading-snug mb-6">
+              Common Questions<br />About Invisalign.
+            </h2>
+            <p class="font-body text-md text-neutral leading-relaxed mb-10">
+              We hear a lot of the same questions from patients considering clear aligners.
+              Here are honest answers to the ones that come up most often.
+            </p>
+            <CTAGroup />
+          </div>
+
+          <!-- Right: FAQ list -->
+          <div class="flex flex-col gap-0 divide-y divide-cream-light">
+
+            {[
+              {
+                q: 'How long does the treatment take?',
+                a: 'While every case is unique, most Invisalign treatments are completed in 12 to 18 months. During your consultation, Dr. Alexander or Dr. Burley will give you a personalized timeline based on your specific goals.',
+              },
+              {
+                q: 'Can I eat normally?',
+                a: 'Yes. Because the aligners are removable, you can enjoy all your favorite foods without worrying about breaking wires or brackets. Simply take them out before meals and put them back in afterward.',
+              },
+              {
+                q: 'Is it painful?',
+                a: 'Most patients feel a slight pressure for a day or two after switching to a new set of aligners, but it is much more comfortable than traditional metal braces. This sensation is a sign that the aligners are working.',
+              },
+              {
+                q: 'Am I a good candidate for Invisalign?',
+                a: 'Invisalign is effective for a wide range of alignment issues, including crowding, spacing, overbite, underbite, and crossbite. The best way to find out is with a personalized consultation at our Fort Mill office.',
+              },
+              {
+                q: 'How often do I need to wear them?',
+                a: 'For the best results, aligners should be worn 20 to 22 hours per day. You only remove them to eat, drink anything other than water, and to brush and floss.',
+              },
+            ].map((item) => (
+              <div class="py-7">
+                <h3 class="font-heading text-xl text-navy mb-3 leading-snug">{item.q}</h3>
+                <p class="font-body text-base text-neutral leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+         SECTION 7 — CONTACT FORM
+    ══════════════════════════════════════════════ -->
+    <section id="request-appointment" class="bg-cream-lighter py-24 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 items-start">
+
+          <!-- Left: copy + trust signals (sticky on desktop) -->
+          <div class="lg:sticky lg:top-28">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-px w-8 bg-rose shrink-0"></div>
+              <span class="font-body text-rose-dark text-xs font-semibold tracking-[0.2em] uppercase">Book Your Consultation</span>
+            </div>
+            <h2 class="font-heading text-5xl text-navy leading-snug mb-6">
+              Start Your Smile<br />Transformation Today.
+            </h2>
+            <p class="font-body text-md text-neutral leading-relaxed mb-10">
+              Ready to see what Invisalign can do for your confidence? Fill out the form below
+              or call our Fort Mill office to schedule your personalized consultation.
+            </p>
+
+            <!-- Trust signal checklist -->
+            <ul class="flex flex-col gap-4" role="list">
+              {[
+                'Personalized 3D scan and treatment plan',
+                'Insurance benefits verified before you commit',
+                'Flexible financing and monthly payment plans',
+                'Serving Fort Mill, Tega Cay & surrounding areas',
+              ].map((item) => (
+                <li class="flex items-center gap-3 font-body text-base text-navy">
+                  <span class="w-5 h-5 rounded-full bg-rose flex items-center justify-center shrink-0" aria-hidden="true">
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <polyline points="1,4.5 3.5,7 9,1" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <!-- Right: form card -->
+          <div class="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-cream-light">
+            <h3 class="font-heading text-2xl text-navy mb-6 leading-snug">Submit Your Request</h3>
+            <ContactForm />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+</GlobalLayout>
